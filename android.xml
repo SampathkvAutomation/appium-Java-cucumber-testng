@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+    <test name="Android 1">
+        <parameter name="platformName" value="Android"/>
+        <parameter name="deviceName" value="Pixel_7_Emulator"/>
+        <parameter name="udid" value="emulator-5554"/>
+        <parameter name="systemPort" value="10001"/>
+        <parameter name="chromeDriverReport" value="11001"/>
+        <classes>
+            <class name="com.qa.runners.MyAndroidPixel7TestRunner"/>
+        </classes>
+    </test>
+    <test name="Android 2">
+        <parameter name="platformName" value="Android"/>
+        <parameter name="deviceName" value="Pixel_6_Emulator"/>
+        <parameter name="udid" value="emulator-5556"/>
+        <parameter name="systemPort" value="10002"/>
+        <parameter name="chromeDriverReport" value="11002"/>
+        <classes>
+            <class name="com.qa.runners.MyAndroidPixel6TestRunner"/>
+        </classes>
+    </test>
+</suite>

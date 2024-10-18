@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+    <test name="iOS 1">
+        <parameter name="platformName" value="iOS"/>
+        <parameter name="deviceName" value="iPhone 15 Pro Max"/>
+        <parameter name="udid" value="2B2FF2A2-EE2F-4F22-BCC1-A2E81053D20E"/>
+        <parameter name="wdaLocalPort" value="10003"/>
+        <parameter name="webkitDebugProxyPort" value="11003"/>
+        <classes>
+            <class name="com.qa.runners.MyiOSiPhone15ProMaxTestRunner"/>
+        </classes>
+    </test>
+    <test name="iOS 2">
+        <parameter name="platformName" value="iOS"/>
+        <parameter name="deviceName" value="iPhone 15 Plus"/>
+        <parameter name="udid" value="CCEC5603-EF28-4266-BE0C-2FC66A8E00A6"/>
+        <parameter name="wdaLocalPort" value="10004"/>
+        <parameter name="webkitDebugProxyPort" value="11004"/>
+        <classes>
+            <class name="com.qa.runners.MyiOSiPhone15PlusTestRunner"/>
+        </classes>
+    </test>
+</suite>
